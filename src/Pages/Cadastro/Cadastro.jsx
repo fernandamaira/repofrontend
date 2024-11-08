@@ -1,14 +1,15 @@
 import BotaoPadrao from "../../Components/BotaoPadrao";
+import { Container } from "./Styles";
 
 function Cadastro(){
 
     return (
-        <div>
+        <Container>
             Página Cadastro
             <BotaoPadrao>
-                
+
             </BotaoPadrao>
-        </div>
+        </Container>
     )
 
 }
