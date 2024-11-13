@@ -10,9 +10,10 @@ function App() {
   return (
     
     <div>
-      <Routes/>
+      
       <GlobalStyles/>
       <HeaderComponent />
+      <Routes/>
 
     </div>
 

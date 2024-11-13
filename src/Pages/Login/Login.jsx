@@ -1,18 +1,39 @@
+import React, { useState } from "react";
 import BotaoPadrao from "../../Components/BotaoPadrao";
 import { useNavigate } from "react-router-dom";
-import { Container } from "./Styles";
+import { Container, Title, Input, LinkText, ButtonWrapper, EyeIcon } from "./Styles";
 
-function Login(){
-
+function Login() {
+    const [passwordVisible, setPasswordVisible] = useState(false);
     const navigate = useNavigate();
+
+    const togglePasswordVisibility = () => {
+        setPasswordVisible(!passwordVisible);
+    };
 
     return (
         <Container>
-            Página Login
-            <BotaoPadrao onClick = {() => navigate("/")}/>
+            <Title>LOGIN</Title>
+            <Input type="email" placeholder="E-mail" />
+            <div style={{ position: "relative" }}>
+                <Input
+                    type={passwordVisible ? "text" : "password"}
+                    placeholder="Senha"
+                />
+                <EyeIcon 
+                    src="src/assets/olho.png"  // Caminho direto para o ícone
+                    onClick={togglePasswordVisibility} 
+                    alt="Toggle Password Visibility" 
+                />
+            </div>
+            <LinkText onClick={() => navigate("/signup")}>
+                Não tem login? Faça seu cadastro <a href="/cadastro">aqui.</a>
+            </LinkText>
+            <ButtonWrapper>
+                <BotaoPadrao onClick={() => navigate("/")}>ENTRAR</BotaoPadrao>
+            </ButtonWrapper>
         </Container>
-    )
-
+    );
 }
 
 export default Login;

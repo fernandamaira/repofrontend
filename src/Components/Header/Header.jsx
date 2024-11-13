@@ -1,11 +1,15 @@
 import React from 'react';
-import { HeaderPaginaCpe, StyledHeader } from './Styles.js'; 
+import { HeaderPaginaCpe, StyledHeader, Logo } from './HeaderStyles.js'; 
 
 export function HeaderComponent() {
     return (
       <HeaderPaginaCpe>
-        <StyledHeader>HEADER</StyledHeader>
+        <Logo src="src/assets/logo.png" alt="Logo" />
+        <StyledHeader/>
+
       </HeaderPaginaCpe>
     );
   }
+
+  export default HeaderComponent;
 

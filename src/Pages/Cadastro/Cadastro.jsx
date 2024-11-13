@@ -1,7 +1,6 @@
 import BotaoPadrao from "../../Components/BotaoPadrao";
-import { Input, Button, LinkText, Container, Form, Header, HeaderPaginaCpe } from './Styles.js';
+import { Input, Button, LinkText, Container, Form } from './Styles.js';
 import InputSenha from "../../Components/InputSenha/InputSenha";
-import { HeaderComponent } from '../../Components/Header/Header'; 
 
 
 
@@ -9,10 +8,6 @@ function Cadastro(){
 
     return (
         <Container>
-            <HeaderComponent /> 
-            <BotaoPadrao>
-
-            </BotaoPadrao>
             <Form className="Form">
                 <h1> CADASTRO </h1>
                 <Input type="text" placeholder="Nome" />
