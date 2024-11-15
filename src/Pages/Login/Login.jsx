@@ -21,7 +21,7 @@ function Login() {
                     placeholder="Senha"
                 />
                 <EyeIcon 
-                    src="src/assets/olho.png"  // Caminho direto para o ícone
+                    src="src/assets/olho.png"  
                     onClick={togglePasswordVisibility} 
                     alt="Toggle Password Visibility" 
                 />

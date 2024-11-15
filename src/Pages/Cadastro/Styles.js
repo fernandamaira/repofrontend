@@ -9,6 +9,7 @@ export const Container = styled.div`
   color: yellow;
   min-height: 100vh;
   padding: 20px;
+  width: 100%; 
 
   @media (max-width: 280px) {
     padding: 10px;
@@ -16,15 +17,17 @@ export const Container = styled.div`
 `;
 
 export const Form = styled.div`
-  
-  width: 400px;
+  width: 100%; 
+  max-width: 500px; 
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  margin: 0 auto;  
 
   h1 {
-    color: yellow;
+    color: #ffe712;
     margin-bottom: 30px;
+    font-size: 24px;
   }
 
   @media (max-width: 280px) {
@@ -39,13 +42,15 @@ export const Form = styled.div`
 `;
 
 export const Input = styled.input`
-  width: 100%;
+  width: 100%; 
   padding: 15px;
-  margin-bottom: 15px;
+  margin: 10px 0;
+  border-radius: 30px;
   border: none;
-  border-radius: 5px;
-  outline: none;
   font-size: 16px;
+  background-color: #fff;
+  color: #000;
+  outline: none;
 
   @media (max-width: 280px) {
     padding: 10px;
@@ -54,7 +59,7 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-  width: 100%;
+  width: 100%; 
   padding: 15px;
   background-color: yellow;
   border: none;
@@ -73,6 +78,7 @@ export const Button = styled.button`
 export const LinkText = styled.p`
   color: yellow;
   margin-top: 10px;
+
   a {
     color: lightblue;
     text-decoration: none;

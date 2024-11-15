@@ -16,7 +16,7 @@ function Cadastro(){
                 <InputSenha />
                 <Input type="password" placeholder="Repita sua senha" />
                 <LinkText>
-                Já tem uma conta? <a href="/login">Faça o login aqui.</a>
+                Já tem uma conta? Faça o login <a href="/login">aqui.</a>
                 </LinkText>
                 <Button>CRIAR CONTA</Button>
                 </Form>

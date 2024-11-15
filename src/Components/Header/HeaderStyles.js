@@ -18,7 +18,7 @@ export const Logo = styled.img`
     height: 232px;
     margin-right: 20px;
     position: relative;
-    top: 10px;
+    top: -35px;
     bottom: 22px;
     left: 48px;
     gap: 0px;
