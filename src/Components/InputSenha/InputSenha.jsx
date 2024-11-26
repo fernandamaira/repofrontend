@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Input, InputContainer, EyeIcon } from './InputSenha.styled';
 
-function InputSenha() {
+function InputSenha({ register }) {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -11,6 +11,7 @@ function InputSenha() {
   return (
     <InputContainer>
       <Input
+        {...register("senha")}
         type={isPasswordVisible ? "text" : "password"}
         placeholder="Senha"
       />
@@ -24,3 +25,4 @@ function InputSenha() {
 }
 
 export default InputSenha;
+

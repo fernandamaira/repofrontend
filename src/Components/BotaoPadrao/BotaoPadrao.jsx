@@ -1,12 +1,12 @@
 import { StyleBotaoPadrao } from "./Styles";
 
-function BotaoPadrao (props){
+function BotaoPadrao (props) {
     return (
-    <div>
-        <StyleBotaoPadrao onClick={props.onClick}>
-        {props.children}
-        </StyleBotaoPadrao>
-    </div>
+        <div>
+            <StyleBotaoPadrao type="submit">
+                {props.children}
+            </StyleBotaoPadrao>  
+        </div>
     )
 }
 

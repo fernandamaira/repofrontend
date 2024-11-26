@@ -2,6 +2,7 @@ import BotaoPadrao from "../../Components/BotaoPadrao";
 import { useNavigate } from "react-router-dom"; 
 import { Container } from "./Styles";
 
+
 function Home(){
 
     const navigate = useNavigate();
