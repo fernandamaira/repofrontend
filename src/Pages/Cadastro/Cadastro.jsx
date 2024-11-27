@@ -2,14 +2,20 @@ import BotaoPadrao from "../../Components/BotaoPadrao";
 import { Input, LinkText, Container, Form } from './Styles.js';
 import InputSenha from "../../Components/InputSenha/InputSenha";
 import { useForm } from "react-hook-form";
+import { useCreateUser, useGetUsers } from "../../hooks/user.js";
 
 
 
 function Cadastro(){
+    //Hooks
     const { handleSubmit, register, formState: {errors}, } = useForm ({});
+    const { mutate: postUser, inPending } = useCreateUser({});
+    const { data: users, isLoading } = useGetUsers({});
+    console.log(users);
+    //onSubmit
     function response (data){
-        console.log("oi");
-        console.log(data);
+        console.log("cheguei na função");
+        postUser(data);
     }
 
     return (
@@ -26,6 +32,7 @@ function Cadastro(){
                 </LinkText>
                 <BotaoPadrao>CRIAR CONTA</BotaoPadrao>
                 </Form>
+
         </Container>
     )
 

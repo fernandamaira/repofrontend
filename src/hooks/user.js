@@ -1,7 +1,7 @@
 import { useQuery, useMutation } from "@tanstack/react-query";
 import { GetUsers, CreateUser, UpdateUser, DeleteUser } from "../services/api/endpoints";
 
-export function useGetUser({ onSuccess = () => {}, onError = () => {}}){
+export function useGetUsers({ onSuccess = () => {}, onError = () => {}}){
     return useQuery ({queryKey: ["users"], queryFn: GetUsers, onSuccess, onError});
 }
 

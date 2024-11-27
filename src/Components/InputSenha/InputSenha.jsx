@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Input, InputContainer, EyeIcon } from './InputSenha.styled';
+import { useForm } from "react-hook-form";
 
 function InputSenha({ register }) {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
