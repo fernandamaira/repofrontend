@@ -16,7 +16,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Form = styled.div`
+export const Form = styled.form`
   width: 100%; 
   max-width: 500px; 
   padding: 20px;

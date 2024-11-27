@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BotaoPadrao from "../../Components/BotaoPadrao";
+import { StyleBotaoPadrao } from "./Styles";
 import { useNavigate } from "react-router-dom";
 import { Container, Title, Input, LinkText, ButtonWrapper, EyeIcon } from "./Styles";
 
@@ -30,7 +30,7 @@ function Login() {
                 Não tem login? Faça seu cadastro <a href="/cadastro">aqui.</a>
             </LinkText>
             <ButtonWrapper>
-                <BotaoPadrao onClick={() => navigate("/")}>ENTRAR</BotaoPadrao>
+                <StyleBotaoPadrao onClick={() => navigate("/")}>ENTRAR</StyleBotaoPadrao>
             </ButtonWrapper>
         </Container>
     );

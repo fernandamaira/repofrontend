@@ -1,4 +1,4 @@
-import BotaoPadrao from "../../Components/BotaoPadrao";
+import { StyleBotaoPadrao } from "../Login/Styles";
 import { useNavigate } from "react-router-dom"; 
 import { Container } from "./Styles";
 
@@ -11,8 +11,8 @@ function Home(){
         <Container>
             <h1>HOME</h1>
             Página Home
-            <BotaoPadrao onClick = {() => navigate("/login")}>
-            </BotaoPadrao>
+            <StyleBotaoPadrao onClick = {() => navigate("/login")}>
+            </StyleBotaoPadrao>
         </Container>
     )
 
