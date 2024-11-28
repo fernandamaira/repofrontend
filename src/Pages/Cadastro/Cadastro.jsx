@@ -22,7 +22,7 @@ function Cadastro(){
             toast.error(err);
         },
     });
-    const { data: users, isLoading } = useGetUsers({});
+   const { data: users, isLoading } = useGetUsers({});
     console.log(users);
     
     //onSubmit
@@ -46,7 +46,7 @@ function Cadastro(){
                 <StyleBotaoPadrao>CRIAR CONTA</StyleBotaoPadrao>
             </Form>
 
-            {isLoading ? (
+           {isLoading ? (
                 <p>Carregando...</p>
             ) : (
                 Array.isArray(users) && users.map((user) => {
